@@ -1,6 +1,6 @@
 # Rock_Paper_Scissors_game
 
-   ## a hand game usually played between two people
+   ### a hand game usually played between two people
 
 ## Instructions:
 
