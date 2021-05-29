@@ -10,15 +10,15 @@ def check_spelling(player1):
     return player1
 
 # Number of times for playing the game:
-print (f'Hello, You can play 5 times')
+print (f'Hello, You can play as you want ^_^')
 
 run = 0
-while run < 5: 
+while True: 
     run += 1
-    if run == 5:
-        print('It is the last time to play!')
-    else:
-        print(f'It is the {run} run')
+    
+    # tell the user about turns
+
+    print(f'It is the {run} run')
 
     # ask each player to choose Rock, paper or scissors
     player1 = check_spelling(input('please type Rock, paper or Scissors: \n ')).casefold()
@@ -65,11 +65,6 @@ while run < 5:
     # to leaave space between runs:
     print('     ')
     
-
-# when run is >5
-else: 
-    print('The game is over')
-
 
 
 
