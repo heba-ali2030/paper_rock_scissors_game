@@ -1,5 +1,13 @@
 
 import random
+# check valisity of user input
+def check_spelling(player1):
+    list= ['paper','scissors', 'rock']
+    while player1 not in list:
+        print('Ooh, Sorry, there is a mistake in your typing, try again!')
+        player1= input('please type Rock, paper or Scissors: \n ').casefold()
+
+    return player1
 
 # Number of times for playing the game:
 print (f'Hello, You can play 5 times')
@@ -13,7 +21,7 @@ while run < 5:
         print(f'It is the {run} run')
 
     # ask each player to choose Rock, paper or scissors
-    player1 = input('please type Rock, paper or Scissors: \n ').casefold()
+    player1 = check_spelling(input('please type Rock, paper or Scissors: \n ')).casefold()
 
     hand_game = ['Rock', 'Paper' ,'Scissors']
     player2 = random.choice(hand_game).casefold()
