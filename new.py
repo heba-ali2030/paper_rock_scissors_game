@@ -1,4 +1,3 @@
-
 import random
 # check validity of user input
 def check_spelling(player1):
@@ -29,32 +28,27 @@ while True:
         print(f'you played {player1} and your compititor played a {player2}')
 
         # 1- player plays rock
-        if player1 == 'rock':
-            if player2 == 'scissors':
-                print(f'Congratulations, You are the winner ^_^, Rock crushes scissors\n')
+        if player1 == 'rock' and player2 == 'scissors':
+            print(f'Congratulations, You are the winner ^_^, Rock crushes scissors\n')
             
-            # elif player2 == 'paper':
-            else:
-                print(f'ooooops, You are the loser ^_^, Paper covers rock\n')
+        elif player1 == 'rock' and player2 == 'paper':
+            print(f'ooooops, You are the loser ^_^, Paper covers rock\n')
+
 
         # 2- player plays paper
-        elif player1 == 'paper':
-            if player2 == 'rock':
-               print(f'Congratulations, You are the winner ^_^, Paper covers rock\n')
+        elif player1 == 'paper' and player2 == 'rock':
+            print(f'Congratulations, You are the winner ^_^, Paper covers rock\n')
 
-            # elif player2 == 'scissors':
-            else:
-               print(f'Ooooops, You are the loser!, scissors cuts paper\n')
+        elif  player1 == 'paper' and player2 == 'scissors':
+            print(f'Ooooops, You are the loser!, scissors cuts paper\n')
+
 
         # 3- player plays scissor
+        elif player1 == 'scissors' and player2 == 'rock':
+            print(f'Ooooops, You are the loser !, Rock crushes scissors\n')
 
-        elif player1 == 'scissors':
-            if player2 == 'rock':
-                print(f'Ooooops, You are the loser !, Rock crushes scissors\n')
-
-            # elif  player2 == 'paper':
-            else:
-                print(f'Congratulations, You are the winner ^_^, scissors cuts paper\n')
+        elif player1 == 'scissors' and player2 == 'paper':
+            print(f'Congratulations, You are the winner ^_^, scissors cuts paper\n')
         
     # player and the system are the same
     else: 
@@ -72,12 +66,3 @@ while True:
     # to leaave space between runs:
     print('     ')
     
-    
-
-
-
-
-
-
-
-
